@@ -11,6 +11,7 @@ public class GUI implements ActionListener {
     private static JLabel suc;
     private static JFrame frame;
     private static ImageIcon icon;
+    public GUI() {}
     public void front_end (){
         frame = new JFrame();
         JPanel panel = new JPanel();
@@ -62,7 +63,7 @@ public class GUI implements ActionListener {
                 try {
                     if(d.Loggin(_user, pas)){
                         User u = new User();
-                        u.App_user();
+                        u.App_user(_user);
                         frame.setVisible(false);
                     }
                     else {

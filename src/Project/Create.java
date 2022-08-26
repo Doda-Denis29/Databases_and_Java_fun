@@ -47,7 +47,7 @@ public class Create implements ActionListener {
         b.addActionListener(this);
         b2.addActionListener(this);
         suc = new JLabel("");
-        suc.setBounds(100, 165, 300, 25);
+        suc.setBounds(100, 175, 300, 25);
         panel.add(suc);
         frame_c.setVisible(true);
     }
@@ -76,6 +76,7 @@ public class Create implements ActionListener {
         else if(e.getSource() == b2){
             GUI roll_back = new GUI();
             roll_back.front_end();
+            frame_c.setVisible(false);
         }
     }
 }
